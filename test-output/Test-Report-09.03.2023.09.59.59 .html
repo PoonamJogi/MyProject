@@ -43,7 +43,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Mar 8, 2023 06:31:02 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Mar 9, 2023 09:59:59 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -58,8 +58,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -102,10 +101,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -123,16 +122,16 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>setLogin</span>
-						<span class='test-time'>Mar 8, 2023 06:31:10 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Mar 9, 2023 10:00:06 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 8, 2023 06:31:10 PM</span>
-	<span class='label end-time'>Mar 8, 2023 06:31:10 PM</span>
+	<span class='label start-time'>Mar 9, 2023 10:00:06 AM</span>
+	<span class='label end-time'>Mar 9, 2023 10:00:06 AM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+5ms</span>
 </div>
 <div class='test-steps'>
@@ -145,29 +144,40 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>6:31:10 PM</td>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>10:00:06 AM</td>
 				<td class='step-details'>
-						<span class='badge white-text green'>setLogin</span>
+						<span class='badge white-text red'>setLogin</span>
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>10:00:06 AM</td>
+				<td class='step-details'>
+						Screenshot is below:com.aventstack.extentreports.ExtentTest@4674d90
 					
 				</td>
 			</tr>
 		</tbody>
 	</table>
 </div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='E:\java program\MyProject//Screenshots//setLogin.png' src='E:\java program\MyProject//Screenshots//setLogin.png' data-src='E:\java program\MyProject//Screenshots//setLogin.png'></li>
+						</ul>
 					</div>
 				</li>
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>addnewCustomer</span>
-						<span class='test-time'>Mar 8, 2023 06:31:21 PM</span>
+						<span class='test-time'>Mar 9, 2023 10:00:24 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 8, 2023 06:31:21 PM</span>
-	<span class='label end-time'>Mar 8, 2023 06:31:21 PM</span>
+	<span class='label start-time'>Mar 9, 2023 10:00:24 AM</span>
+	<span class='label end-time'>Mar 9, 2023 10:00:24 AM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 </div>
 <div class='test-steps'>
@@ -182,7 +192,7 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:31:21 PM</td>
+				<td class='timestamp'>10:00:24 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text red'>addnewCustomer</span>
 					
@@ -193,16 +203,16 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>editCustomer</span>
-						<span class='test-time'>Mar 8, 2023 06:31:37 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Mar 9, 2023 10:00:40 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 8, 2023 06:31:37 PM</span>
-	<span class='label end-time'>Mar 8, 2023 06:31:37 PM</span>
+	<span class='label start-time'>Mar 9, 2023 10:00:40 AM</span>
+	<span class='label end-time'>Mar 9, 2023 10:00:40 AM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
@@ -215,11 +225,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>6:31:37 PM</td>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>10:00:40 AM</td>
 				<td class='step-details'>
-						<span class='badge white-text green'>editCustomer</span>
+						<span class='badge white-text red'>editCustomer</span>
 					
 				</td>
 			</tr>
@@ -269,13 +279,13 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 8, 2023 06:31:02 PM</div>
+					<div class='panel-lead'>Mar 9, 2023 09:59:59 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 8, 2023 06:31:02 PM</div>
+			 		<div class='panel-lead'>Mar 9, 2023 09:59:59 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -316,13 +326,13 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-				passParent: 2,
-				failParent: 1,
+				passParent: 0,
+				failParent: 3,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 3,
 				
 				passChild: 0,
 				failChild: 0,

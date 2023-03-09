@@ -21,7 +21,7 @@ public class TC_LoginTest_001 extends BaseClass
 		lp.clickLoginButton();
 		logger.info("click on submitbutton");
 		
-		if(driver.getCurrentUrl().equals("Managerhomepage1"))
+		if(driver.getCurrentUrl().contains("Managerhomepage"))
 		{
 			Assert.assertTrue(true);
 			logger.info("Login successful");

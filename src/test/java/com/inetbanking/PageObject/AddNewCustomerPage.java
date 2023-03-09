@@ -51,6 +51,12 @@ public class AddNewCustomerPage
     @FindBy(xpath="//input[@name='sub']")
     WebElement submitbutton;
     
+    @FindBy(xpath="//div[@id='ad_position_box']")
+    WebElement ad;
+    
+    @FindBy(xpath="//span[@class='ns-77i7v-e-7']")
+    WebElement addismiss;
+    
     public void clickAddCustomerLink()
     {
     	addcustomerlink.click();
@@ -114,6 +120,9 @@ public class AddNewCustomerPage
     	submitbutton.click();
     }
     
-    
+    public void adDissmiss()
+    {
+    	addismiss.click();
+    }
     
   }

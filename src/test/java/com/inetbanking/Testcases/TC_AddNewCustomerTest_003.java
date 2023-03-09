@@ -24,12 +24,11 @@ public class TC_AddNewCustomerTest_003 extends BaseClass
 	lp.clickLoginButton();
 	logger.info("click on submit button");
 	
-	Thread.sleep(1000);
-	
 	AddNewCustomerPage addcust=new AddNewCustomerPage(driver);
 
 	logger.info("click on New Customer link");
 	addcust.clickAddCustomerLink();
+
 	logger.info("customer detail provided");
 	addcust.setCustomerName("poonam");
 	addcust.setGender("female");
