@@ -7,6 +7,20 @@
   <test thread-count="5" name="BankingApp Test(failed)" verbose="0">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="com.inetbanking.Testcases.TC_EditCustomerTest_004">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="editCustomer"/>
+        </methods>
+      </class> <!-- com.inetbanking.Testcases.TC_EditCustomerTest_004 -->
+      <class name="com.inetbanking.Testcases.TC_LoginTest_001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setLogin"/>
+        </methods>
+      </class> <!-- com.inetbanking.Testcases.TC_LoginTest_001 -->
       <class name="com.inetbanking.Testcases.TC_AddNewCustomerTest_003">
         <methods>
           <include name="tearDown"/>

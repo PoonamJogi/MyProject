@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-MyProject" class="navigator-link">
-              <span class="suite-name border-passed">MyProject</span>
+              <span class="suite-name border-skipped">MyProject</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-MyProject" class="hide-methods passed suite-MyProject"> (hide)</a> <!-- hide-methods passed suite-MyProject -->
-                      <a href="#" panel-name="suite-MyProject" class="show-methods passed suite-MyProject"> (show)</a> <!-- show-methods passed suite-MyProject -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-MyProject" class="hide-methods skipped suite-MyProject"> (hide)</a> <!-- hide-methods skipped suite-MyProject -->
+                      <a href="#" panel-name="suite-MyProject" class="show-methods skipped suite-MyProject"> (show)</a> <!-- show-methods skipped suite-MyProject -->
                     </span>
-                    <div class="method-list-content passed suite-MyProject">
+                    <div class="method-list-content skipped suite-MyProject">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-MyProject" title="com.inetbanking.Testcases.TC_AddNewCustomerTest_003" class="method navigator-link" hash-for-method="addnewCustomer">addnewCustomer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyProject" title="com.inetbanking.Testcases.TC_EditCustomerTest_004" class="method navigator-link" hash-for-method="editCustomer">editCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-MyProject" title="com.inetbanking.Testcases.TC_LoginTest_001" class="method navigator-link" hash-for-method="setLogin">setLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-MyProject -->
+                    </div> <!-- method-list-content skipped suite-MyProject -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,9 +128,41 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MyProject" class="panel MyProject">
-          <div class="suite-MyProject-class-passed">
+          <div class="suite-MyProject-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
+              <span class="class-name">com.inetbanking.Testcases.TC_EditCustomerTest_004</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editCustomer">
+                  </a> <!-- editCustomer -->
+                  <span class="method-name">editCustomer</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:59103/devtools/browser/3b077763-6bf9-45fb-a803-fd3042abc638
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at com.inetbanking.Testcases.BaseClass.setup(BaseClass.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyProject-class-skipped -->
+          <div class="suite-MyProject-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">com.inetbanking.Testcases.TC_LoginTest_001</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -134,13 +171,30 @@
                   <a name="setLogin">
                   </a> <!-- setLogin -->
                   <span class="method-name">setLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:59081/devtools/browser/a7d854cd-b956-42a5-bfc5-b424ba3abf0a
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at com.inetbanking.Testcases.BaseClass.setup(BaseClass.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MyProject-class-passed -->
-          <div class="suite-MyProject-class-passed">
+          </div> <!-- suite-MyProject-class-skipped -->
+          <div class="suite-MyProject-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.inetbanking.Testcases.TC_AddNewCustomerTest_003</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -149,10 +203,27 @@
                   <a name="addnewCustomer">
                   </a> <!-- addnewCustomer -->
                   <span class="method-name">addnewCustomer</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:59092/devtools/browser/9b24e983-5ca5-458c-87d6-97b15dcdde98
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at com.inetbanking.Testcases.BaseClass.setup(BaseClass.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MyProject-class-passed -->
+          </div> <!-- suite-MyProject-class-skipped -->
         </div> <!-- panel MyProject -->
         <div panel-name="test-xml-MyProject" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -171,6 +242,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.inetbanking.Testcases.TC_LoginTest_001&quot;/&gt;
       &lt;class name=&quot;com.inetbanking.Testcases.TC_AddNewCustomerTest_003&quot;/&gt;
+      &lt;class name=&quot;com.inetbanking.Testcases.TC_EditCustomerTest_004&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BankingApp Test --&gt;
 &lt;/suite&gt; &lt;!-- MyProject --&gt;
@@ -184,7 +256,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">BankingApp Test (2 classes)</span>
+                <span class="test-name">BankingApp Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -210,20 +282,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addnewCustomer')
-data.setCell(0, 2, 'com.inetbanking.Testcases.TC_AddNewCustomerTest_003')
-data.setCell(0, 3, 9079);
+data.setCell(0, 1, 'setLogin')
+data.setCell(0, 2, 'com.inetbanking.Testcases.TC_LoginTest_001')
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'setLogin')
-data.setCell(1, 2, 'com.inetbanking.Testcases.TC_LoginTest_001')
-data.setCell(1, 3, 3586);
+data.setCell(1, 1, 'editCustomer')
+data.setCell(1, 2, 'com.inetbanking.Testcases.TC_EditCustomerTest_004')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addnewCustomer')
+data.setCell(2, 2, 'com.inetbanking.Testcases.TC_AddNewCustomerTest_003')
+data.setCell(2, 3, 0);
 window.suiteTableData['MyProject']= { tableData: data, tableDiv: 'times-div-MyProject'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-MyProject">
               </div> <!-- times-div-MyProject -->
             </div> <!-- times-div -->
@@ -251,31 +327,58 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.inetbanking.Testcases.TC_LoginTest_001</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">setLogin</span>
-                <span class="method-start">4695 ms</span>
+                <span class="method-start">1626 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8297 ms</span>
+                <span class="method-start">1640 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.inetbanking.Testcases.TC_AddNewCustomerTest_003</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">8478 ms</span>
+                <span class="method-start">1641 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">addnewCustomer</span>
-                <span class="method-start">12700 ms</span>
+                <span class="method-start">2382 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inetbanking.Testcases.TC_EditCustomerTest_004</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">2383 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inetbanking.Testcases.TC_AddNewCustomerTest_003</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2383 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inetbanking.Testcases.TC_EditCustomerTest_004</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">editCustomer</span>
+                <span class="method-start">3094 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21779 ms</span>
+                <span class="method-start">3095 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

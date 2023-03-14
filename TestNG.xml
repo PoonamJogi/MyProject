@@ -7,7 +7,7 @@
   </listeners>
   
   <test name="BankingApp Test">
-      <parameter name="browser" value="chrome"></parameter>
+      <parameter name="browser" value="edge"></parameter>
           <classes>
               <class name="com.inetbanking.Testcases.TC_LoginTest_001"/>  
           <!--<class name="com.inetbanking.Testcases.TC_LoginDDT_002"/> --> 

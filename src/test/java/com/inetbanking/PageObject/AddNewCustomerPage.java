@@ -54,7 +54,7 @@ public class AddNewCustomerPage
     @FindBy(xpath="//div[@id='ad_position_box']")
     WebElement ad;
     
-    @FindBy(xpath="//span[@class='ns-77i7v-e-7']")
+    @FindBy(xpath="//div[@id='dismiss-button']")
     WebElement addismiss;
     
     public void clickAddCustomerLink()
@@ -121,8 +121,11 @@ public class AddNewCustomerPage
     }
     
     public void adDissmiss()
-    {
+    { 
+    	driver.switchTo().frame("ad_iframe");
     	addismiss.click();
+    	driver.switchTo().parentFrame();
+    	
     }
     
   }
