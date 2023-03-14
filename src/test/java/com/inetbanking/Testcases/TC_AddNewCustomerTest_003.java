@@ -29,8 +29,6 @@ public class TC_AddNewCustomerTest_003 extends BaseClass
 	logger.info("click on New Customer link");
 	addcust.clickAddCustomerLink();
 	
-	addcust.adDissmiss();
-	
 	logger.info("customer detail provided");
 	addcust.setCustomerName("poonam");
 	addcust.setGender("female");

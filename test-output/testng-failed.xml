@@ -7,13 +7,6 @@
   <test thread-count="5" name="BankingApp Test(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="com.inetbanking.Testcases.TC_AddNewCustomerTest_003">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="addnewCustomer"/>
-        </methods>
-      </class> <!-- com.inetbanking.Testcases.TC_AddNewCustomerTest_003 -->
       <class name="com.inetbanking.Testcases.TC_EditCustomerTest_004">
         <methods>
           <include name="tearDown"/>

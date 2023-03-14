@@ -21,7 +21,7 @@ public class EditCustomerPage
     WebElement customerid;
     
     @FindBy(xpath="//input[@name='AccSubmit']")
-    WebElement edidcustsubmitbutton;
+    WebElement editcustsubmitbutton;
     
     @FindBy(xpath="//textarea[@name='addr']")
     WebElement address;
@@ -61,7 +61,7 @@ public class EditCustomerPage
     
     public void clickEditSubmitButton()
     {
-    	edidcustsubmitbutton.click();
+    	editcustsubmitbutton.click();
     }
     
     

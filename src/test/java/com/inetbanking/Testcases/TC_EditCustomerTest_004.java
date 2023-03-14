@@ -25,7 +25,7 @@ public class TC_EditCustomerTest_004 extends BaseClass
 	  editcust.clickEditCustomerLink();
 	  logger.info("click on Edit Customer link");
 	  
-	  editcust.enterCustomerId("6913");
+	  editcust.enterCustomerId("87082");
 	  logger.info("Customer Id provided");
 	  editcust.clickEditSubmitButton();
 	  
