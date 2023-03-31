@@ -21,7 +21,7 @@ public class AddNewCustomerPage
     @FindBy(xpath="//input[@name='name']")
     WebElement Customername;
     
-    @FindBy(xpath="//tbody/tr[5]/td")
+    @FindBy(xpath="//input[@name='rad1'and @value='f']")
     WebElement gender;	
     
     @FindBy(xpath="//input[@id='dob']")
